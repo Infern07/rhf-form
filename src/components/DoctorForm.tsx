@@ -43,7 +43,7 @@ export const DoctorForm = () => {
   renderCount++;
   return (
     <div>
-      <h1>Doctor Form ({renderCount / 2})</h1>
+      <h1 className="pb-5 font-serif">Doctor Form </h1>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="form-control">
           <label htmlFor="name">Enter your name</label>
