@@ -46,7 +46,9 @@ export const DoctorForm = () => {
       <h1 className="pb-5 font-serif">Doctor Form 👩‍⚕️</h1>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="form-control">
-          <label htmlFor="name">Enter your name</label>
+          <label htmlFor="name">
+            Enter your name<span className="text-red-500 pl-1">*</span>
+          </label>
           <input
             type="string"
             id="name"
@@ -61,7 +63,9 @@ export const DoctorForm = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="specialization">Specialization</label>
+          <label htmlFor="specialization">
+            Specialization<span className="text-red-500 pl-1">*</span>
+          </label>
           <input
             type="string"
             id="specialization"
@@ -76,7 +80,9 @@ export const DoctorForm = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="address">Address</label>
+          <label htmlFor="address">
+            Address<span className="text-red-500 pl-1">*</span>
+          </label>
           <input
             type="string"
             id="address"
@@ -88,7 +94,9 @@ export const DoctorForm = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="appointment_price">Appointment Price</label>
+          <label htmlFor="appointment_price">
+            Appointment Price<span className="text-red-500 pl-1">*</span>
+          </label>
           <input
             type="number"
             id="appointment_price"
@@ -103,7 +111,9 @@ export const DoctorForm = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="contactnumber">Contact Number</label>
+          <label htmlFor="contactnumber">
+            Contact Number<span className="text-red-500 pl-1">*</span>
+          </label>
           <input
             type="string"
             id="contactnumber"
@@ -115,7 +125,9 @@ export const DoctorForm = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">
+            Email<span className="text-red-500 pl-1">*</span>
+          </label>
           <input
             type="email"
             id="email"
@@ -132,7 +144,9 @@ export const DoctorForm = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="availability">Availability hours</label>
+          <label htmlFor="availability">
+            Availability hours<span className="text-red-500 pl-1">*</span>
+          </label>
           <input
             type="string"
             id="availability"
@@ -144,7 +158,9 @@ export const DoctorForm = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="rating">Ratings</label>
+          <label htmlFor="rating">
+            Ratings<span className="text-red-500 pl-1">*</span>
+          </label>
           <input
             type="number"
             id="rating"
@@ -156,7 +172,9 @@ export const DoctorForm = () => {
         </div>
 
         <div>
-          <label>List of Qualifications</label>
+          <label>
+            List of Qualifications <span className="text-red-500 pl-1">*</span>
+          </label>
           <div>
             {fields.map((field, index) => {
               return (
@@ -189,9 +207,9 @@ export const DoctorForm = () => {
             </button>
           </div>
         </div>
-
+        <br></br>
         <div className="padd">
-          <label htmlFor="bio">Bio</label>
+          <label htmlFor="bio">Bio (about yourself)</label>
           <input type="string" id="bio" {...register("bio")} />
         </div>
 
