@@ -42,7 +42,7 @@ export const DoctorForm = () => {
 
   renderCount++;
   return (
-    <div>
+    <div className="border p-10 bg-[#202020] rounded-lg">
       <h1 className="pb-5 font-serif">Doctor Form </h1>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="form-control">
